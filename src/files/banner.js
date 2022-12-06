@@ -21,8 +21,8 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   // words that will be displayed on the screen
-  const toRotate = ["Web Developer", "Web Designer", "Mobile App developer"];
-  const period = 2000;
+  const toRotate = ["Web Developer", "Mobile App Developer", "FullStack"];
+  const period = 500;
 
   // useEffect to type or delete the current word
   useEffect(() => {
@@ -79,10 +79,10 @@ export const Banner = () => {
                 {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{`Hi! It's me Aayam Khatiwada`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Mobile App developer" ]'><span className="wrap">{text}</span></span></h1>
-                    <p>An undergraduate, with a desire and dedication to learn new skills and improve it. Have a some
-                      understanding on programming languages and also have basic understanding on platform. Self learner with the a strong passion on new and creative working and want to get experience
-                      through mentorship.</p>
+                    <h1>{`Hi! It's me Vatler Lett Software Engineer`} <br/><span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Mobile App Developer", "FullStack" ]'><span className="wrap">{text}</span></span></h1>
+                    <p>
+                      Experienced Software Engineer adept in all stages of advanced web development. Knowledgeable in user interface, testing, and debugging processes. Bringing forth expertise in design, installation, testing and maintenance of web systems. Equipped with a diverse and promising skill-set. Proficient in an assortment of technologies, including TypeScript, Node, Go and Rust. Able to effectively self-manage during independent projects, as well as collaborate in a team setting.
+                    </p>
                     <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
                   </div>}
               </TrackVisibility>
